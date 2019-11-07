@@ -8,7 +8,7 @@ describe Factory do
   before do
     Factory.define :bicycle, class: Bicycle do
       color :red
-      gears 11
+      gears 22
       style :road
       weight 20
       size :medium
