@@ -11,6 +11,18 @@ module Factory
       @declarations << Declaration.new(name, value)
     end
 
+    def method_missing(name, *args, &block)
+      if args.empty?
+        super
+      else
+        add_attribute(name, args[0])
+      end
+    end
+
+    def respond_to_missing?(*)
+      super
+    end
+
     def run
       entity = @options[:class].new
       @declarations.each do |declaration|
