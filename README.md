@@ -1,12 +1,12 @@
 ## Installation
 
-Clone this repository.
+Clone this repository
 
 ```
 git clone https://github.com/davidtkramer/factory-workshop.git
 ```
 
-Install dependencies.
+Install dependencies
 
 ```
 bundle install
