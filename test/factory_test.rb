@@ -7,20 +7,20 @@ end
 describe Factory do
   before do
     Factory.define :bicycle, class: Bicycle do
+      style :road
+      size :medium
       color :red
       gears 22
-      style :road
       weight 20
-      size :medium
     end
   end
 
   it 'builds an instance of bicycle' do
     bicycle = Factory.run(:bicycle)
+    assert_equal :road, bicycle.style
+    assert_equal :medium, bicycle.size
     assert_equal :red, bicycle.color
     assert_equal 22, bicycle.gears
-    assert_equal :road, bicycle.style
     assert_equal 20, bicycle.weight
-    assert_equal :medium, bicycle.size
   end
 end
