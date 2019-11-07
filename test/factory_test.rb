@@ -18,7 +18,7 @@ describe Factory do
   it 'builds an instance of bicycle' do
     bicycle = Factory.run(:bicycle)
     assert_equal :red, bicycle.color
-    assert_equal 11, bicycle.gears
+    assert_equal 22, bicycle.gears
     assert_equal :road, bicycle.style
     assert_equal 20, bicycle.weight
     assert_equal :medium, bicycle.size
