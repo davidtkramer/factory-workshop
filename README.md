@@ -31,7 +31,8 @@ Each step in the tutorial has a corresponding branch. Run `git checkout [branch 
 | Branch Name | GitHub Link |
 | --- | --- |
 | `1-intro` | [Intro](https://github.com/davidtkramer/factory-workshop/tree/1-intro) |
-| `2-basic-dsl` | [Basic DSL](https://github.com/davidtkramer/factory-workshop/tree/2-basic-dsl) |
-| `3-method-missing` | [Method Missing Refactor](https://github.com/davidtkramer/ts-react-tutorial/tree/3-method-missing) |
-| `4-traits` | [Traits](https://github.com/davidtkramer/ts-react-tutorial/tree/4-traits) |
-| `5-attribute-overrides` | [Attribute Overrides](https://github.com/davidtkramer/ts-react-tutorial/tree/5-attribute-overrides) |
+| `2-blocks` | [Blocks](https://github.com/davidtkramer/factory-workshop/tree/2-blocks) |
+| `3-basic-dsl` | [Basic DSL](https://github.com/davidtkramer/factory-workshop/tree/3-basic-dsl) |
+| `4-method-missing` | [Method Missing Refactor](https://github.com/davidtkramer/ts-react-tutorial/tree/4-method-missing) |
+| `5-traits` | [Traits](https://github.com/davidtkramer/ts-react-tutorial/tree/5-traits) |
+| `6-attribute-overrides` | [Attribute Overrides](https://github.com/davidtkramer/ts-react-tutorial/tree/6-attribute-overrides) |
