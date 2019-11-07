@@ -1,35 +1,37 @@
-# Factory::Workshop
-
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/factory/workshop`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
-
 ## Installation
 
-Add this line to your application's Gemfile:
+Clone this repository.
 
-```ruby
-gem 'factory-workshop'
+```
+git clone https://github.com/davidtkramer/factory-workshop.git
 ```
 
-And then execute:
+Install dependencies.
 
-    $ bundle
+```
+bundle install
+```
 
-Or install it yourself as:
+Checkout the first branch
 
-    $ gem install factory-workshop
+```
+git checkout 1-intro
+```
 
-## Usage
+Run the test in the watch mode
 
-TODO: Write usage instructions here
+```
+bundle exec guard
+```
 
-## Development
+## Directory
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+Each step in the tutorial has a corresponding branch. Run `git checkout [branch name]` to view the branch locally or use the links below to view on github.
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/factory-workshop.
+| Branch Name | GitHub Link |
+| --- | --- |
+| `1-intro` | [Intro](https://github.com/davidtkramer/factory-workshop/tree/1-intro) |
+| `2-basic-dsl` | [Basic DSL](https://github.com/davidtkramer/factory-workshop/tree/2-basic-dsl) |
+| `3-events-and-updating-state` | [Method Missing Refactor](https://github.com/davidtkramer/ts-react-tutorial/tree/3-method-missing) |
+| `4-component-decomposition` | [Traits](https://github.com/davidtkramer/ts-react-tutorial/tree/4-traits) |
+| `5-conditional-rendering` | [Attribute Overrides](https://github.com/davidtkramer/ts-react-tutorial/tree/5-attribute-overrides) |
