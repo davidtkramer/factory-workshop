@@ -18,7 +18,7 @@ Checkout the first branch
 git checkout 1-intro
 ```
 
-Run the tests in the watch mode
+Run the tests in watch mode
 
 ```
 bundle exec guard
