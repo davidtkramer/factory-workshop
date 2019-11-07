@@ -1,8 +1,17 @@
 class Declaration
   attr_reader :name, :value
 
-  def initialize(name, value)
+  def initialize(name, value, trait = nil)
     @name = name
     @value = value
+    @trait = trait
+  end
+
+  def traitless?
+    @trait.nil?
+  end
+
+  def in?(trait)
+    @trait == trait
   end
 end

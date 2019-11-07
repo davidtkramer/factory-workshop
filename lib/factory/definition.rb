@@ -8,7 +8,7 @@ module Factory
     end
 
     def add_attribute(name, value)
-      @declarations << Declaration.new(name, value)
+      @declarations << Declaration.new(name, value, @trait)
     end
 
     def method_missing(name, *args, &block)
@@ -23,11 +23,17 @@ module Factory
       super
     end
 
-    def run
+    def trait(name, &block)
+      @trait = name
+      instance_eval(&block)
+      @trait = nil
+    end
+
+    def run(trait)
       entity = @options[:class].new
-      @declarations.each do |declaration|
-        entity.send("#{declaration.name}=", declaration.value)
-      end
+      @declarations
+        .select { |declaration| declaration.traitless? || declaration.in?(trait) }
+        .each { |declaration| entity.send("#{declaration.name}=", declaration.value) }
       entity
     end
   end

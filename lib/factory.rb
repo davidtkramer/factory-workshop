@@ -11,7 +11,7 @@ module Factory
     @factories[name] = definition
   end
 
-  def self.run(name)
-    @factories[name].run
+  def self.run(name, trait = nil)
+    @factories[name].run(trait)
   end
 end
