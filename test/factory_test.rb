@@ -8,7 +8,7 @@ describe Factory do
   before do
     Factory.define :bicycle, class: Bicycle do
       add_attribute :color, :red
-      add_attribute :gears, 11
+      add_attribute :gears, 22
       add_attribute :style, :road
       add_attribute :weight, 20
       add_attribute :size, :medium
