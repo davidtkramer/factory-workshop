@@ -12,6 +12,18 @@ Install dependencies
 bundle install
 ```
 
+If you get an error about an incorrect bundler version, run the command below and then try running bundle install again.
+
+```
+gem update --system
+```
+
+If that still doesn't fix it, then install the latest version of bundler and then run bundle install again.
+
+```
+gem install bundler
+```
+
 Checkout the first branch
 
 ```
