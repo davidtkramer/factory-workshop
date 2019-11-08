@@ -1,5 +1,3 @@
-require 'factory/declaration'
-
 module Factory
   class DefinitionProxy
     def initialize(definition, options = {})

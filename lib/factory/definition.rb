@@ -1,3 +1,5 @@
+require 'factory/declaration'
+
 module Factory
   class Definition
     def initialize(options)
