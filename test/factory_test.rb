@@ -60,4 +60,19 @@ describe Factory do
     assert_equal 22, bicycle.gears
     assert_equal 20, bicycle.weight
   end
+
+  it 'builds a bike with attribute overrides' do
+    bicycle = Factory.run(:bicycle, size: :large)
+    assert_equal :red, bicycle.color
+    assert_equal :large, bicycle.size
+  end
+
+  it 'builds a bike with a trait and overrides' do
+    bicycle = Factory.run(:bicycle, :road, size: :large)
+    assert_equal :large, bicycle.size
+    assert_equal :red, bicycle.color
+    assert_equal :road, bicycle.style
+    assert_equal 22, bicycle.gears
+    assert_equal 20, bicycle.weight
+  end
 end

@@ -13,7 +13,7 @@ module Factory
     @factories[name] = definition
   end
 
-  def self.run(name, *traits)
-    @factories[name].run(traits)
+  def self.run(name, *traits, **overrides)
+    @factories[name].run(traits, overrides)
   end
 end
