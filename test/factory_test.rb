@@ -21,6 +21,10 @@ describe Factory do
         gears 1
         weight 17
       end
+
+      trait :blue do
+        color :blue
+      end
     end
   end
 
@@ -46,5 +50,14 @@ describe Factory do
     assert_equal :fixed_gear, bicycle.style
     assert_equal 1, bicycle.gears
     assert_equal 17, bicycle.weight
+  end
+
+  it 'builds a blue road bike' do
+    bicycle = Factory.run(:bicycle, :road, :blue)
+    assert_equal :medium, bicycle.size
+    assert_equal :blue, bicycle.color
+    assert_equal :road, bicycle.style
+    assert_equal 22, bicycle.gears
+    assert_equal 20, bicycle.weight
   end
 end

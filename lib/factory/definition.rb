@@ -11,11 +11,11 @@ module Factory
       @declarations << Declaration.new(name, value, trait)
     end
 
-    def run(trait)
+    def run(traits)
       entity = @options[:class].new
       @declarations
         .sort_by { |declaration| declaration.traitless? ? :_ : declaration.trait }
-        .select { |declaration| declaration.traitless? || declaration.in?(trait) }
+        .select { |declaration| declaration.traitless? || declaration.in?(traits) }
         .each { |declaration| entity.send("#{declaration.name}=", declaration.value) }
       entity
     end

@@ -11,7 +11,7 @@ class Declaration
     @trait.nil?
   end
 
-  def in?(trait)
-    @trait == trait
+  def in?(traits)
+    traits.include?(@trait)
   end
 end
