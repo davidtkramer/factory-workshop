@@ -1,5 +1,6 @@
 require 'factory/version'
 require 'factory/definition'
+require 'factory/definition_proxy'
 require 'ostruct'
 
 module Factory
@@ -7,7 +8,8 @@ module Factory
 
   def self.define(name, options, &block)
     definition = Definition.new(options)
-    definition.instance_eval(&block)
+    proxy = DefinitionProxy.new(definition)
+    proxy.instance_eval(&block)
     @factories[name] = definition
   end
 
