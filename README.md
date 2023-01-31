@@ -7,7 +7,7 @@ This is the repository for a Ruby metaprogramming workshop I designed and held a
 - dynamic arguments using splat `*` and double-splat `**`
 - acquiring an object's class with `self.class`
 - using `method_missing` to hook into Ruby's method lookup chain
-- using proxy classes to enable context-dependent functionality like traits
+- using proxy classes to enable context-aware DSLs like traits
 
 By the end of the workshop, developers will build a working data factory that supports traits and attribute overrides:
 
