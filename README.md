@@ -6,7 +6,7 @@ This is the repository for a Ruby metaprogramming workshop I designed and held a
 - using `method_missing` to create dynamic domain-specific languages
 - using proxy classes to enable context-dependent functionality
 
-By the end of the workshop, you'll have a working data factory that supports traits and attribute overrides
+By the end of the workshop, developers will build a working data factory that supports traits and attribute overrides:
 
 ```ruby
 class Bicycle
