@@ -2,9 +2,12 @@
 
 This is the repository for a Ruby metaprogramming workshop I designed and held at Redtail Technology in 2019. The workshop teaches metaprogramming techniques through test-driven construction of a simple data factory modeled after [FactoryBot](https://github.com/thoughtbot/factory_bot). Topics covered include:
 
-- executing blocks in the context of another class using `instance_exec`
-- using `method_missing` to create dynamic domain-specific languages
-- using proxy classes to enable context-dependent functionality
+- executing blocks in the context of another class using `instance_eval`
+- dynamically settings attributes with `send`
+- dynamic arguments using splat `*` and double-splat `**`
+- acquiring an object's class with `self.class`
+- using `method_missing` to hook into Ruby's method lookup chain
+- using proxy classes to enable context-dependent functionality like traits
 
 By the end of the workshop, developers will build a working data factory that supports traits and attribute overrides:
 
