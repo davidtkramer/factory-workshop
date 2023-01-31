@@ -5,6 +5,7 @@ This is the repository for a Ruby metaprogramming workshop I designed and held a
 - executing blocks in the context of another class using `instance_eval`
 - dynamically setting attributes on objects with `send`
 - dynamic arguments using splat `*` and double-splat `**`
+- writing methods that accept blocks and how they relate to procs/lambdas
 - acquiring an object's class with `self.class`
 - using `method_missing` to hook into Ruby's method lookup chain
 - using proxy classes to enable context-aware DSLs like traits
